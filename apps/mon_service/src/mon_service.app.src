@@ -1,0 +1,18 @@
+{application, mon_service,
+ [{description, "Prototype for monitoring"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { mon_service_app, []}},
+  {included_applications, [cowboy]},
+  {applications,
+   [kernel,
+    stdlib,
+    prometheus
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
